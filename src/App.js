@@ -8,9 +8,8 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('dispatch is working');
     dispatch(fetchMessage());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Routes>
